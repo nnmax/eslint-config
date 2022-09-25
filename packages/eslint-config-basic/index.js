@@ -8,7 +8,7 @@ const eslintConfig = {
     browser: true,
     node: true,
   },
-  extends: ['eslint:recommended', '@max/eslint-config-import'],
+  extends: ['eslint:recommended', '@nnmax/eslint-config-import'],
   rules: {
     'array-callback-return': [
       'error',

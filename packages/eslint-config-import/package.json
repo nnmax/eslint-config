@@ -1,5 +1,5 @@
 {
-  "name": "@max/eslint-config-import",
+  "name": "@nnmax/eslint-config-import",
   "version": "0.0.1",
   "main": "index.js",
   "dependencies": {

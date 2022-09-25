@@ -1,10 +1,10 @@
 {
-  "name": "@max/eslint-config-typescript",
+  "name": "@nnmax/eslint-config-typescript",
   "version": "0.0.1",
   "main": "index.js",
   "dependencies": {
-    "@max/eslint-config-basic": "workspace:^",
-    "@max/eslint-config-import": "workspace:^",
+    "@nnmax/eslint-config-basic": "workspace:^",
+    "@nnmax/eslint-config-import": "workspace:^",
     "@typescript-eslint/eslint-plugin": "^5.36.2",
     "@typescript-eslint/parser": "^5.36.2",
     "eslint-import-resolver-typescript": "^3.5.1"

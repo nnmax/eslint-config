@@ -1,5 +1,5 @@
 {
-  "name": "@max/eslint-config-basic",
+  "name": "@nnmax/eslint-config-basic",
   "version": "0.0.1",
   "main": "index.js",
   "devDependencies": {

@@ -1,5 +1,5 @@
 {
-  "name": "@max/eslint-config",
+  "name": "@nnmax/eslint-config",
   "packageManager": "yarn@3.2.3",
   "private": true,
   "workspaces": [

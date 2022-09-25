@@ -10,7 +10,7 @@ const eslintConfig = {
     node: true,
   },
   extends: [
-    '@max/eslint-config-basic',
+    '@nnmax/eslint-config-basic',
     'plugin:@typescript-eslint/recommended',
   ],
   settings: {
