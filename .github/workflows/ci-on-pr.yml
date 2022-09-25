@@ -2,9 +2,9 @@ name: CI on Pull Request
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ['main']
   pull_request:
-    branches: [ "main" ]
+    branches: ['main']
 
   workflow_dispatch:
 
@@ -42,7 +42,7 @@ jobs:
 
       - name: Install dependencies
         run: yarn install --immutable
-        
+
   lint:
     name: Lint Code
     runs-on: ubuntu-latest
@@ -75,6 +75,6 @@ jobs:
 
       - name: ESLint
         run: yarn eslint
-        
+
       - name: Prettier
         run: yarn prettier:ci
