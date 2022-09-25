@@ -1,2 +1,3 @@
-# linter
-Reasonable ESLint + Prettier + VSCode config
+# @nnmax/eslint-config
+
+Reasonable ESLint + Prettier + VSCode Config
