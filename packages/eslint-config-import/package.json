@@ -1,0 +1,14 @@
+{
+  "name": "@max/eslint-config-import",
+  "version": "0.0.1",
+  "main": "index.js",
+  "dependencies": {
+    "eslint-plugin-import": "^2.26.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.24.0"
+  },
+  "peerDependencies": {
+    "eslint": "^8.24.0"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "@max/eslint-config-basic",
+  "version": "0.0.1",
+  "main": "index.js",
+  "devDependencies": {
+    "eslint": "^8.24.0"
+  },
+  "peerDependencies": {
+    "eslint": "^8.24.0"
+  }
+}
