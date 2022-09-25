@@ -22,6 +22,6 @@
   },
   "lint-staged": {
     "*.{js,ts}": "eslint --cache --fix",
-    "*.{js,md,.yml,.json}": "prettier --write"
+    "*.{js,md,yml,yaml,json}": "prettier --write"
   }
 }
