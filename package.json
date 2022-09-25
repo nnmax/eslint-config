@@ -5,10 +5,23 @@
   "workspaces": [
     "packages/*"
   ],
+  "scripts": {
+    "eslint": "eslint .",
+    "eslint:fix": "yarn eslint --fix",
+    "prettier": "prettier --write .",
+    "prettier:ci": "prettier --check .",
+    "postinstall": "husky install"
+  },
   "devDependencies": {
     "@types/prettier": "^2.7.1",
     "eslint": "^8.24.0",
     "eslint-config-prettier": "^8.5.0",
+    "husky": ">=6",
+    "lint-staged": ">=10",
     "prettier": "^2.7.1"
+  },
+  "lint-staged": {
+    "*.{js,ts}": "eslint --cache --fix",
+    "*.{js,md,.yml,.json}": "prettier --write"
   }
 }
