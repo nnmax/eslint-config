@@ -11,16 +11,19 @@
     "prettier": "prettier --write .",
     "prettier:ci": "prettier --check .",
     "postinstall": "husky install",
-    "semantic-release": "semantic-release"
+    "release": "yarn workspaces foreach run semantic-release"
   },
   "devDependencies": {
+    "@semantic-release/changelog": "^6.0.1",
+    "@semantic-release/git": "^10.0.1",
     "@types/prettier": "^2.7.1",
     "eslint": "^8.24.0",
     "eslint-config-prettier": "^8.5.0",
     "husky": ">=6",
     "lint-staged": ">=10",
     "prettier": "^2.7.1",
-    "semantic-release": "^19.0.5"
+    "semantic-release": "^19.0.5",
+    "semantic-release-monorepo": "^7.0.5"
   },
   "lint-staged": {
     "*.{js,ts}": "eslint --fix",

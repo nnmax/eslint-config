@@ -3,9 +3,16 @@
   "version": "0.0.1",
   "main": "index.js",
   "devDependencies": {
-    "eslint": "^8.24.0"
+    "@semantic-release/changelog": "^6.0.1",
+    "@semantic-release/git": "^10.0.1",
+    "eslint": "^8.24.0",
+    "semantic-release": "^19.0.5",
+    "semantic-release-monorepo": "^7.0.5"
   },
   "peerDependencies": {
     "eslint": "^8.24.0"
+  },
+  "scripts": {
+    "semantic-release": "semantic-release"
   }
 }
