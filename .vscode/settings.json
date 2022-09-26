@@ -2,6 +2,10 @@
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.codeActionsOnSave": {
-    "source.fixAll": false
+    "source.fixAll": false,
+    "source.fixAll.eslint": true
+  },
+  "[json][jsonc][javascript][javascriptreact][typescript][typescriptreact][less][markdown][yml][yaml][graphql][css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   }
 }

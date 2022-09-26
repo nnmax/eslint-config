@@ -2,12 +2,13 @@ name: CI on Pull Request
 
 on:
   push:
-    branches: ['main']
+    branches:
+      - ${{ github.event.repository.default_branch }}
   pull_request:
-    branches: ['main']
+    branches:
+      - ${{ github.event.repository.default_branch }}
 
   workflow_dispatch:
-
 jobs:
   install:
     name: Install Dependencies
@@ -34,12 +35,6 @@ jobs:
             .yarn/cache
             node_modules
           key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/yarn.lock') }}
-
-      - name: List the state of node modules
-        if: ${{ steps.cache-yarn.outputs.cache-hit != 'true' }}
-        continue-on-error: true
-        run: npm list
-
       - name: Install dependencies
         run: yarn install --immutable
 
