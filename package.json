@@ -10,7 +10,8 @@
     "eslint:fix": "yarn eslint --fix",
     "prettier": "prettier --write .",
     "prettier:ci": "prettier --check .",
-    "postinstall": "husky install"
+    "postinstall": "husky install",
+    "semantic-release": "semantic-release"
   },
   "devDependencies": {
     "@types/prettier": "^2.7.1",
@@ -18,10 +19,16 @@
     "eslint-config-prettier": "^8.5.0",
     "husky": ">=6",
     "lint-staged": ">=10",
-    "prettier": "^2.7.1"
+    "prettier": "^2.7.1",
+    "semantic-release": "^19.0.5"
   },
   "lint-staged": {
     "*.{js,ts}": "eslint --cache --fix",
     "*.{js,md,yml,yaml,json}": "prettier --write"
+  },
+  "version": "0.0.0-development",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nnmax/eslint-config.git"
   }
 }
