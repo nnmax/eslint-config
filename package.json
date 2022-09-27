@@ -1,5 +1,6 @@
 {
   "name": "@nnmax/eslint-config",
+  "version": "0.0.1",
   "packageManager": "yarn@3.2.3",
   "private": true,
   "workspaces": [
@@ -29,7 +30,6 @@
     "*.{js,ts}": "eslint --fix",
     "*.{js,md,yml,yaml,json}": "prettier --write"
   },
-  "version": "0.0.0-development",
   "repository": {
     "type": "git",
     "url": "https://github.com/nnmax/eslint-config.git"

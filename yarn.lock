@@ -121,7 +121,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nnmax/eslint-config-basic@workspace:^, @nnmax/eslint-config-basic@workspace:packages/eslint-config-basic":
+"@nnmax/eslint-config-basic@^0.0.1, @nnmax/eslint-config-basic@workspace:packages/eslint-config-basic":
   version: 0.0.0-use.local
   resolution: "@nnmax/eslint-config-basic@workspace:packages/eslint-config-basic"
   dependencies:
@@ -135,7 +135,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@nnmax/eslint-config-import@workspace:^, @nnmax/eslint-config-import@workspace:packages/eslint-config-import":
+"@nnmax/eslint-config-import@^0.0.1, @nnmax/eslint-config-import@workspace:packages/eslint-config-import":
   version: 0.0.0-use.local
   resolution: "@nnmax/eslint-config-import@workspace:packages/eslint-config-import"
   dependencies:
@@ -154,9 +154,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@nnmax/eslint-config-react@workspace:packages/eslint-config-react"
   dependencies:
-    "@nnmax/eslint-config-basic": "workspace:^"
-    "@nnmax/eslint-config-import": "workspace:^"
-    "@nnmax/eslint-config-typescript": "workspace:^"
+    "@nnmax/eslint-config-basic": ^0.0.1
+    "@nnmax/eslint-config-import": ^0.0.1
+    "@nnmax/eslint-config-typescript": ^0.0.1
     "@semantic-release/changelog": ^6.0.1
     "@semantic-release/git": ^10.0.1
     eslint: ^8.24.0
@@ -170,12 +170,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@nnmax/eslint-config-typescript@workspace:^, @nnmax/eslint-config-typescript@workspace:packages/eslint-config-typescript":
+"@nnmax/eslint-config-typescript@^0.0.1, @nnmax/eslint-config-typescript@workspace:packages/eslint-config-typescript":
   version: 0.0.0-use.local
   resolution: "@nnmax/eslint-config-typescript@workspace:packages/eslint-config-typescript"
   dependencies:
-    "@nnmax/eslint-config-basic": "workspace:^"
-    "@nnmax/eslint-config-import": "workspace:^"
+    "@nnmax/eslint-config-basic": ^0.0.1
+    "@nnmax/eslint-config-import": ^0.0.1
     "@semantic-release/changelog": ^6.0.1
     "@semantic-release/git": ^10.0.1
     "@typescript-eslint/eslint-plugin": ^5.36.2
