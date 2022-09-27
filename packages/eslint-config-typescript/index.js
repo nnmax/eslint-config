@@ -16,7 +16,11 @@ const eslintConfig = {
   settings: {
     'import/resolver': {
       typescript: true,
+      node: {
+        extensions: ['.ts', '.tsx', '.d.ts', '.js', '.jsx', '.json'],
+      },
     },
+    'import/extensions': ['.ts', '.tsx', '.d.ts', '.js', '.jsx', '.json'],
   },
 }
 
