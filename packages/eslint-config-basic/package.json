@@ -13,6 +13,6 @@
     "@nnmax/eslint-config-import": "workspace:*"
   },
   "peerDependencies": {
-    "eslint": "^8.24.0"
+    "eslint": "^8"
   }
 }
