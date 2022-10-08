@@ -1,20 +1,7 @@
 {
-  "name": "@nnmax/eslint-config",
-  "version": "0.0.1",
-  "packageManager": "yarn@3.2.3",
-  "private": true,
-  "workspaces": [
-    "packages/*"
-  ],
-  "scripts": {
-    "eslint": "eslint .",
-    "eslint:fix": "yarn eslint --fix",
-    "prettier": "prettier --write .",
-    "prettier:ci": "prettier --check .",
-    "postinstall": "husky install"
-  },
   "devDependencies": {
     "@types/prettier": "^2.7.1",
+    "bumpp": "^8.2.1",
     "eslint": "^8.24.0",
     "eslint-config-prettier": "^8.5.0",
     "husky": ">=6",
@@ -22,11 +9,28 @@
     "prettier": "^2.7.1"
   },
   "lint-staged": {
-    "*.{js,ts}": "eslint --fix",
-    "*.{js,md,yml,yaml,json}": "prettier --write"
+    "*.{js,md,yml,yaml,json}": "prettier --write",
+    "*.{js,ts}": "eslint --fix"
   },
+  "name": "@nnmax/eslint-config",
+  "packageManager": "yarn@3.2.3",
+  "private": true,
   "repository": {
     "type": "git",
     "url": "https://github.com/nnmax/eslint-config.git"
-  }
+  },
+  "scripts": {
+    "bump": "bumpp package.json packages/*/package.json --commit --push --tag",
+    "eslint": "eslint .",
+    "eslint:fix": "yarn eslint --fix",
+    "postinstall": "husky install",
+    "prettier": "prettier --write .",
+    "prettier:ci": "prettier --check .",
+    "publish": "yarn workspaces foreach --verbose --all --no-private npm publish --access public --tolerate-republish",
+    "release": "yarn bump && yarn publish"
+  },
+  "version": "1.0.0-beta.0",
+  "workspaces": [
+    "packages/*"
+  ]
 }

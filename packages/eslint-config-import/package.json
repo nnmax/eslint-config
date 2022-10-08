@@ -1,6 +1,6 @@
 {
   "name": "@nnmax/eslint-config-import",
-  "version": "1.0.0",
+  "version": "1.0.0-beta.0",
   "main": "index.js",
   "dependencies": {
     "eslint-plugin-import": "^2.26.0"

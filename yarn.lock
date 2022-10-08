@@ -73,17 +73,30 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nnmax/eslint-config-basic@*, @nnmax/eslint-config-basic@workspace:packages/eslint-config-basic":
+"@jsdevtools/ez-spawn@npm:^3.0.4":
+  version: 3.0.4
+  resolution: "@jsdevtools/ez-spawn@npm:3.0.4"
+  dependencies:
+    call-me-maybe: ^1.0.1
+    cross-spawn: ^7.0.3
+    string-argv: ^0.3.1
+    type-detect: ^4.0.8
+  checksum: 3f105f4dfb2d809ab058c7b71ae950a90211b17827c83d674f616e1a4d99c10707d9bf15eeba5ac3e3121cc0b309768b72f0088e48b42c779b005511544933dd
+  languageName: node
+  linkType: hard
+
+"@nnmax/eslint-config-basic@workspace:*, @nnmax/eslint-config-basic@workspace:packages/eslint-config-basic":
   version: 0.0.0-use.local
   resolution: "@nnmax/eslint-config-basic@workspace:packages/eslint-config-basic"
   dependencies:
+    "@nnmax/eslint-config-import": "workspace:*"
     eslint: ^8.24.0
   peerDependencies:
     eslint: ^8.24.0
   languageName: unknown
   linkType: soft
 
-"@nnmax/eslint-config-import@*, @nnmax/eslint-config-import@workspace:packages/eslint-config-import":
+"@nnmax/eslint-config-import@workspace:*, @nnmax/eslint-config-import@workspace:packages/eslint-config-import":
   version: 0.0.0-use.local
   resolution: "@nnmax/eslint-config-import@workspace:packages/eslint-config-import"
   dependencies:
@@ -98,9 +111,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@nnmax/eslint-config-react@workspace:packages/eslint-config-react"
   dependencies:
-    "@nnmax/eslint-config-basic": "*"
-    "@nnmax/eslint-config-import": "*"
-    "@nnmax/eslint-config-typescript": "*"
+    "@nnmax/eslint-config-basic": "workspace:*"
+    "@nnmax/eslint-config-typescript": "workspace:*"
     eslint: ^8.24.0
     eslint-plugin-jsx-a11y: ^6.6.1
     eslint-plugin-react: ^7.31.8
@@ -110,18 +122,18 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@nnmax/eslint-config-typescript@*, @nnmax/eslint-config-typescript@workspace:packages/eslint-config-typescript":
+"@nnmax/eslint-config-typescript@workspace:*, @nnmax/eslint-config-typescript@workspace:packages/eslint-config-typescript":
   version: 0.0.0-use.local
   resolution: "@nnmax/eslint-config-typescript@workspace:packages/eslint-config-typescript"
   dependencies:
-    "@nnmax/eslint-config-basic": "*"
-    "@nnmax/eslint-config-import": "*"
+    "@nnmax/eslint-config-basic": "workspace:*"
     "@typescript-eslint/eslint-plugin": ^5.36.2
     "@typescript-eslint/parser": ^5.36.2
     eslint: ^8.24.0
     eslint-config-react: ^1.1.7
     eslint-config-react-hooks: ^1.0.0
     eslint-import-resolver-typescript: ^3.5.1
+    eslint-plugin-import: ^2.26.0
     eslint-plugin-jsx-a11y: ^6.6.1
   peerDependencies:
     eslint: ^8.24.0
@@ -133,6 +145,7 @@ __metadata:
   resolution: "@nnmax/eslint-config@workspace:."
   dependencies:
     "@types/prettier": ^2.7.1
+    bumpp: ^8.2.1
     eslint: ^8.24.0
     eslint-config-prettier: ^8.5.0
     husky: ">=6"
@@ -514,6 +527,29 @@ __metadata:
   languageName: node
   linkType: hard
 
+"bumpp@npm:^8.2.1":
+  version: 8.2.1
+  resolution: "bumpp@npm:8.2.1"
+  dependencies:
+    "@jsdevtools/ez-spawn": ^3.0.4
+    cac: ^6.7.12
+    fast-glob: ^3.2.11
+    kleur: ^4.1.4
+    prompts: ^2.4.1
+    semver: ^7.3.5
+  bin:
+    bumpp: bin/bumpp.js
+  checksum: 1107c4e9519e86de49bc3fff48b249ad0e2758acdd3fe50a6a49c14d884606e5f6228e6fb238fc236bc7aaa6bea4450cfb3038875aef7b2df67a6300fb82aa6a
+  languageName: node
+  linkType: hard
+
+"cac@npm:^6.7.12":
+  version: 6.7.14
+  resolution: "cac@npm:6.7.14"
+  checksum: 45a2496a9443abbe7f52a49b22fbe51b1905eff46e03fd5e6c98e3f85077be3f8949685a1849b1a9cd2bc3e5567dfebcf64f01ce01847baf918f1b37c839791a
+  languageName: node
+  linkType: hard
+
 "call-bind@npm:^1.0.0, call-bind@npm:^1.0.2":
   version: 1.0.2
   resolution: "call-bind@npm:1.0.2"
@@ -521,6 +557,13 @@ __metadata:
     function-bind: ^1.1.1
     get-intrinsic: ^1.0.2
   checksum: f8e31de9d19988a4b80f3e704788c4a2d6b6f3d17cfec4f57dc29ced450c53a49270dc66bf0fbd693329ee948dd33e6c90a329519aef17474a4d961e8d6426b0
+  languageName: node
+  linkType: hard
+
+"call-me-maybe@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "call-me-maybe@npm:1.0.1"
+  checksum: d19e9d6ac2c6a83fb1215718b64c5e233f688ebebb603bdfe4af59cde952df1f2b648530fab555bf290ea910d69d7d9665ebc916e871e0e194f47c2e48e4886b
   languageName: node
   linkType: hard
 
@@ -1725,6 +1768,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"kleur@npm:^3.0.3":
+  version: 3.0.3
+  resolution: "kleur@npm:3.0.3"
+  checksum: df82cd1e172f957bae9c536286265a5cdbd5eeca487cb0a3b2a7b41ef959fc61f8e7c0e9aeea9c114ccf2c166b6a8dd45a46fd619c1c569d210ecd2765ad5169
+  languageName: node
+  linkType: hard
+
+"kleur@npm:^4.1.4":
+  version: 4.1.5
+  resolution: "kleur@npm:4.1.5"
+  checksum: 1dc476e32741acf0b1b5b0627ffd0d722e342c1b0da14de3e8ae97821327ca08f9fb944542fb3c126d90ac5f27f9d804edbe7c585bf7d12ef495d115e0f22c12
+  languageName: node
+  linkType: hard
+
 "language-subtag-registry@npm:~0.3.2":
   version: 0.3.22
   resolution: "language-subtag-registry@npm:0.3.22"
@@ -2193,6 +2250,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"prompts@npm:^2.4.1":
+  version: 2.4.2
+  resolution: "prompts@npm:2.4.2"
+  dependencies:
+    kleur: ^3.0.3
+    sisteransi: ^1.0.5
+  checksum: d8fd1fe63820be2412c13bfc5d0a01909acc1f0367e32396962e737cb2fc52d004f3302475d5ce7d18a1e8a79985f93ff04ee03007d091029c3f9104bffc007d
+  languageName: node
+  linkType: hard
+
 "prop-types@npm:^15.8.1":
   version: 15.8.1
   resolution: "prop-types@npm:15.8.1"
@@ -2382,6 +2449,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"semver@npm:^7.3.5":
+  version: 7.3.8
+  resolution: "semver@npm:7.3.8"
+  dependencies:
+    lru-cache: ^6.0.0
+  bin:
+    semver: bin/semver.js
+  checksum: ba9c7cbbf2b7884696523450a61fee1a09930d888b7a8d7579025ad93d459b2d1949ee5bbfeb188b2be5f4ac163544c5e98491ad6152df34154feebc2cc337c1
+  languageName: node
+  linkType: hard
+
 "semver@npm:^7.3.7":
   version: 7.3.7
   resolution: "semver@npm:7.3.7"
@@ -2424,6 +2502,13 @@ __metadata:
   version: 3.0.7
   resolution: "signal-exit@npm:3.0.7"
   checksum: a2f098f247adc367dffc27845853e9959b9e88b01cb301658cfe4194352d8d2bb32e18467c786a7fe15f1d44b233ea35633d076d5e737870b7139949d1ab6318
+  languageName: node
+  linkType: hard
+
+"sisteransi@npm:^1.0.5":
+  version: 1.0.5
+  resolution: "sisteransi@npm:1.0.5"
+  checksum: aba6438f46d2bfcef94cf112c835ab395172c75f67453fe05c340c770d3c402363018ae1ab4172a1026a90c47eaccf3af7b6ff6fa749a680c2929bd7fa2b37a4
   languageName: node
   linkType: hard
 
@@ -2688,6 +2773,13 @@ __metadata:
   dependencies:
     prelude-ls: ^1.2.1
   checksum: ec688ebfc9c45d0c30412e41ca9c0cdbd704580eb3a9ccf07b9b576094d7b86a012baebc95681999dd38f4f444afd28504cb3a89f2ef16b31d4ab61a0739025a
+  languageName: node
+  linkType: hard
+
+"type-detect@npm:^4.0.8":
+  version: 4.0.8
+  resolution: "type-detect@npm:4.0.8"
+  checksum: 62b5628bff67c0eb0b66afa371bd73e230399a8d2ad30d852716efcc4656a7516904570cd8631a49a3ce57c10225adf5d0cbdcb47f6b0255fe6557c453925a15
   languageName: node
   linkType: hard
 
