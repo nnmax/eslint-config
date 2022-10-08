@@ -8,6 +8,7 @@ const eslintConfig = {
   plugins: ['react'],
   extends: [
     '@nnmax/eslint-config-basic',
+    '@nnmax/eslint-config-typescript',
     'plugin:@typescript-eslint/recommended',
     require.resolve('./react'),
     require.resolve('./react-a11y'),
