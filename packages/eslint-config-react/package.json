@@ -2,6 +2,10 @@
   "name": "@nnmax/eslint-config-react",
   "version": "1.0.0",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nnmax/eslint-config.git"
+  },
   "dependencies": {
     "@nnmax/eslint-config-basic": "workspace:*",
     "@nnmax/eslint-config-typescript": "workspace:*",
