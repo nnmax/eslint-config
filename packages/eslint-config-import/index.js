@@ -67,7 +67,7 @@ module.exports = {
     'import/no-nodejs-modules': 'off',
     'import/first': 'error',
     'import/imports-first': 'off',
-    'import/no-duplicates': 'error',
+    'import/no-duplicates': 'off',
     'import/no-namespace': 'off',
     'import/extensions': [
       'error',

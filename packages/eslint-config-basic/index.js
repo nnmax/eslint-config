@@ -19,7 +19,6 @@ const eslintConfig = {
     ],
     'no-constant-binary-expression': ['error'],
     'no-constructor-return': ['error'],
-    'no-duplicate-imports': ['error', { includeExports: true }],
     'no-promise-executor-return': ['error'],
     'no-self-compare': ['error'],
     'no-template-curly-in-string': ['error'],
