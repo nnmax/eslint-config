@@ -48,18 +48,8 @@ const eslintConfig = {
       },
     ],
     'require-atomic-updates': ['error'],
-    'max-lines-per-function': [
-      'error',
-      {
-        max: 50,
-        skipBlankLines: true,
-        skipComments: true,
-        IIFEs: true,
-      },
-    ],
     'max-depth': ['error', 4],
     'max-nested-callbacks': ['error', 3],
-    'complexity': ['error', 20],
     'default-param-last': ['error'],
     'eqeqeq': ['error', 'always'],
     'no-alert': ['error'],
