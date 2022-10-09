@@ -13,6 +13,9 @@ const eslintConfig = {
     '@nnmax/eslint-config-basic',
     'plugin:@typescript-eslint/recommended',
   ],
+  rules: {
+    '@typescript-eslint/no-empty-function': 'off',
+  },
   settings: {
     'import/resolver': {
       typescript: true,
