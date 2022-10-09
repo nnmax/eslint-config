@@ -29,7 +29,7 @@
     "publish": "yarn workspaces foreach --verbose --all --no-private npm publish --access public --tolerate-republish",
     "release": "yarn bump && yarn publish"
   },
-  "version": "1.0.2",
+  "version": "1.1.0",
   "workspaces": [
     "packages/*"
   ]
