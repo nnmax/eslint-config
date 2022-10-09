@@ -69,15 +69,7 @@ module.exports = {
     'import/imports-first': 'off',
     'import/no-duplicates': 'off',
     'import/no-namespace': 'off',
-    'import/extensions': [
-      'error',
-      'ignorePackages',
-      {
-        js: 'never',
-        mjs: 'never',
-        jsx: 'never',
-      },
-    ],
+    'import/extensions': 'off',
     'import/order': [
       'error',
       { groups: [['builtin', 'external', 'internal']] },
