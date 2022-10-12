@@ -8,8 +8,8 @@
   },
   "dependencies": {
     "@nnmax/eslint-config-basic": "workspace:*",
-    "@typescript-eslint/eslint-plugin": "^5.39.0",
-    "@typescript-eslint/parser": "^5.39.0",
+    "@typescript-eslint/eslint-plugin": "^5.40.0",
+    "@typescript-eslint/parser": "^5.40.0",
     "eslint-config-react": "^1.1.7",
     "eslint-config-react-hooks": "^1.0.0",
     "eslint-import-resolver-typescript": "^3.5.1",
