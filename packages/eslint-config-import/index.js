@@ -52,6 +52,7 @@ module.exports = {
           '**/protractor.conf.*.{js,ts}',
           '**/karma.conf.{js,ts}',
           '**/.eslintrc.{js,ts}',
+          '**/*.stories.*',
         ],
         optionalDependencies: false,
       },
