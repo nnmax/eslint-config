@@ -48,8 +48,6 @@ const eslintConfig = {
       },
     ],
     'require-atomic-updates': ['error'],
-    'max-depth': ['error', 4],
-    'max-nested-callbacks': ['error', 3],
     'default-param-last': ['error'],
     'eqeqeq': ['error', 'always'],
     'no-alert': ['error'],
