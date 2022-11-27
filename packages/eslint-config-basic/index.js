@@ -41,7 +41,7 @@ const eslintConfig = {
     'no-use-before-define': [
       'error',
       {
-        functions: true,
+        functions: false,
         classes: true,
         variables: true,
         allowNamedExports: false,

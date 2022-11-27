@@ -123,15 +123,8 @@ const eslintConfig = {
       'error',
       { ignorePureComponents: true },
     ],
-    'react/prop-types': [
-      'error',
-      {
-        ignore: [],
-        customValidators: [],
-        skipUndeclared: false,
-      },
-    ],
-    'react/react-in-jsx-scope': 'error',
+    'react/prop-types': 'off',
+    'react/react-in-jsx-scope': 'off',
     'react/require-render-return': 'error',
     'react/self-closing-comp': 'error',
     'react/sort-comp': [
@@ -228,12 +221,7 @@ const eslintConfig = {
     ],
     'react/jsx-space-before-closing': ['off', 'always'],
     'react/no-array-index-key': 'error',
-    'react/require-default-props': [
-      'error',
-      {
-        forbidDefaultForRequired: true,
-      },
-    ],
+    'react/require-default-props': 'off',
     'react/forbid-foreign-prop-types': ['warn', { allowInPropTypes: true }],
     'react/void-dom-elements-no-children': 'error',
     'react/default-props-match-prop-types': [
@@ -281,15 +269,7 @@ const eslintConfig = {
     ],
     'react/state-in-constructor': ['error', 'always'],
     'react/static-property-placement': ['error', 'property assignment'],
-    'react/jsx-props-no-spreading': [
-      'error',
-      {
-        html: 'enforce',
-        custom: 'enforce',
-        explicitSpread: 'ignore',
-        exceptions: [],
-      },
-    ],
+    'react/jsx-props-no-spreading': 'off',
     'react/prefer-read-only-props': 'off',
     'react/jsx-no-script-url': [
       'error',
@@ -302,13 +282,7 @@ const eslintConfig = {
     ],
     'react/jsx-no-useless-fragment': 'error',
     'react/no-adjacent-inline-elements': 'off',
-    'react/function-component-definition': [
-      'error',
-      {
-        namedComponents: ['function-declaration', 'function-expression'],
-        unnamedComponents: 'function-expression',
-      },
-    ],
+    'react/function-component-definition': 'off',
     'react/jsx-newline': 'off',
     'react/jsx-no-constructed-context-values': 'error',
     'react/no-unstable-nested-components': 'error',
