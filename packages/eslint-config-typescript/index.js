@@ -16,6 +16,19 @@ const eslintConfig = {
   rules: {
     '@typescript-eslint/no-empty-function': 'off',
     '@typescript-eslint/ban-ts-comment': 'off',
+    'no-use-before-define': 'off',
+    '@typescript-eslint/no-use-before-define': [
+      'error',
+      {
+        functions: false,
+        classes: true,
+        variables: true,
+        allowNamedExports: true,
+        enums: false,
+        typedefs: false,
+        ignoreTypeReferences: true,
+      },
+    ],
   },
   settings: {
     'import/resolver': {
