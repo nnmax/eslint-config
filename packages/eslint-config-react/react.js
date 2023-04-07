@@ -208,7 +208,7 @@ const eslintConfig = {
       },
     ],
     'react/style-prop-object': 'error',
-    'react/no-unescaped-entities': 'error',
+    'react/no-unescaped-entities': 'off',
     'react/no-children-prop': 'error',
     'react/jsx-tag-spacing': [
       'error',

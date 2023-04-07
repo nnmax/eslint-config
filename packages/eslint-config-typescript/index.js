@@ -15,6 +15,24 @@ const eslintConfig = {
   ],
   rules: {
     '@typescript-eslint/no-empty-function': 'off',
+    '@typescript-eslint/ban-ts-comment': 'off',
+    'no-use-before-define': 'off',
+    '@typescript-eslint/no-use-before-define': [
+      'error',
+      {
+        functions: false,
+        classes: true,
+        variables: true,
+        allowNamedExports: true,
+        enums: false,
+        typedefs: false,
+        ignoreTypeReferences: true,
+      },
+    ],
+    'no-shadow': 'off',
+    '@typescript-eslint/no-shadow': ['error'],
+    '@typescript-eslint/no-non-null-assertion': 'off',
+    '@typescript-eslint/no-empty-interface': 'off',
   },
   settings: {
     'import/resolver': {
