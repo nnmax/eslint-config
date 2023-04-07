@@ -15,6 +15,7 @@ const eslintConfig = {
   ],
   rules: {
     '@typescript-eslint/no-empty-function': 'off',
+    '@typescript-eslint/ban-ts-comment': 'off',
   },
   settings: {
     'import/resolver': {
