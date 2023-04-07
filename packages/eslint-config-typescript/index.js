@@ -32,6 +32,7 @@ const eslintConfig = {
     'no-shadow': 'off',
     '@typescript-eslint/no-shadow': ['error'],
     '@typescript-eslint/no-non-null-assertion': 'off',
+    '@typescript-eslint/no-empty-interface': 'off',
   },
   settings: {
     'import/resolver': {
