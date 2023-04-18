@@ -53,7 +53,7 @@ const eslintConfig = {
       },
     ],
     'react/jsx-indent-props': ['error', 2],
-    'react/jsx-key': 'off',
+    'react/jsx-key': 'error',
     'react/jsx-max-props-per-line': [
       'error',
       { maximum: 1, when: 'multiline' },
