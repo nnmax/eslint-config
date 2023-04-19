@@ -8,8 +8,8 @@ const eslintConfig = {
   plugins: ['react'],
   extends: [
     '@nnmax/eslint-config-basic',
-    '@nnmax/eslint-config-typescript',
     'plugin:@typescript-eslint/recommended',
+    '@nnmax/eslint-config-typescript',
     require.resolve('./react'),
     require.resolve('./react-a11y'),
     require.resolve('./react-hooks'),
