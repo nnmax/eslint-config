@@ -192,7 +192,7 @@ const eslintConfig = {
     'react/jsx-equals-spacing': ['error', 'never'],
     'react/jsx-indent': ['error', 2],
     'react/jsx-no-target-blank': ['error', { enforceDynamicLinks: 'always' }],
-    'react/jsx-filename-extension': ['error', { extensions: ['.jsx'] }],
+    'react/jsx-filename-extension': ['error', { extensions: ['.jsx', '.tsx'] }],
     'react/jsx-no-comment-textnodes': 'error',
     'react/no-render-return-value': 'error',
     'react/require-optimization': ['off', { allowDecorators: [] }],
