@@ -10,10 +10,8 @@ Most of the rules come from [Airbnb JavaScript Style](https://github.com/airbnb/
 
 ## Prerequisites
 
-- ESLint 8.0.0 and above
-- Node.js 12.22 and above
-- Node.js 14 and above
-- Node.js 16 and above
+- ESLint 7.0.0 and above
+- Node.js 8.0 and above
 
 ## Usage
 

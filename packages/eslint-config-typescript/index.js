@@ -23,7 +23,6 @@ const eslintConfig = {
         functions: false,
         classes: true,
         variables: true,
-        allowNamedExports: true,
         enums: false,
         typedefs: false,
         ignoreTypeReferences: true,
