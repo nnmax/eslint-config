@@ -62,7 +62,12 @@ const eslintConfig = {
     'no-loop-func': ['error'],
     'no-negated-condition': ['error'],
     'no-var': ['error'],
-    'no-shadow': ['error'],
+    'no-shadow': [
+      'error',
+      {
+        ignoreOnInitialization: true,
+      },
+    ],
     'prefer-rest-params': ['error'],
     'radix': ['error'],
   },
