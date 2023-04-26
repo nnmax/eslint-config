@@ -113,6 +113,7 @@ __metadata:
     eslint-plugin-react-hooks: ^4.6.0
   peerDependencies:
     eslint: ^8
+    typescript: "*"
   languageName: unknown
   linkType: soft
 
