@@ -27,7 +27,7 @@ With TypeScript:
 npm i -D @nnmax/eslint-config-typescript
 ```
 
-With React:
+With React and TypeScript:
 
 ```bash
 npm i -D @nnmax/eslint-config-react
