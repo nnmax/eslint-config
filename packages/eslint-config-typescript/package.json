@@ -1,6 +1,6 @@
 {
   "name": "@nnmax/eslint-config-typescript",
-  "version": "1.4.1-eslint.7",
+  "version": "1.4.2-eslint.7",
   "main": "index.js",
   "repository": {
     "type": "git",
