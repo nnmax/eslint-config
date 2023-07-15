@@ -1,26 +1,26 @@
 {
   "devDependencies": {
-    "@types/prettier": "^2.7.1",
-    "bumpp": "^8.2.1",
-    "eslint": "^8.28.0",
-    "eslint-config-prettier": "^8.5.0",
-    "husky": "^8.0.2",
-    "lint-staged": "^13.0.4",
-    "prettier": "^2.8.0"
+    "@types/prettier": "^2.7.3",
+    "bumpp": "^9.1.1",
+    "eslint": "^8.45.0",
+    "eslint-config-prettier": "^8.8.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.3",
+    "prettier": "^3.0.0"
   },
   "lint-staged": {
     "*.{js,md,yml,yaml,json}": "prettier --write",
     "*.{js,ts}": "eslint --fix"
   },
   "name": "@nnmax/eslint-config",
-  "packageManager": "yarn@3.2.4",
+  "packageManager": "yarn@3.6.1",
   "private": true,
   "repository": {
     "type": "git",
     "url": "https://github.com/nnmax/eslint-config.git"
   },
   "scripts": {
-    "bump": "bumpp package.json packages/*/package.json --commit --push --tag",
+    "bump": "bumpp -r",
     "eslint": "eslint .",
     "eslint:fix": "yarn eslint --fix",
     "postinstall": "husky install",
