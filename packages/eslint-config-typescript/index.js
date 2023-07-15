@@ -25,13 +25,14 @@ const eslintConfig = {
     '@typescript-eslint/restrict-plus-operands': 'off',
     '@typescript-eslint/unbound-method': 'off',
     '@typescript-eslint/ban-ts-comment': 'off',
+    '@typescript-eslint/no-explicit-any': 'off',
     'no-use-before-define': 'off',
     '@typescript-eslint/no-use-before-define': [
       'error',
       {
         functions: false,
         classes: true,
-        variables: true,
+        variables: false,
         allowNamedExports: true,
         enums: false,
         typedefs: false,
@@ -53,6 +54,17 @@ const eslintConfig = {
     '@typescript-eslint/consistent-type-imports': 'warn',
     '@typescript-eslint/consistent-type-exports': 'warn',
     '@typescript-eslint/no-floating-promises': 'off',
+    'no-unused-vars': 'off',
+    '@typescript-eslint/no-unused-vars': [
+      'warn',
+      {
+        vars: 'all',
+        args: 'after-used',
+        ignoreRestSiblings: true,
+        argsIgnorePattern: '^_',
+        destructuredArrayIgnorePattern: '^_',
+      },
+    ],
   },
   settings: {
     'import/resolver': {

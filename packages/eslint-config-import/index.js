@@ -66,10 +66,7 @@ module.exports = {
     'import/no-duplicates': 'off',
     'import/no-namespace': 'off',
     'import/extensions': 'off',
-    'import/order': [
-      'error',
-      { groups: [['builtin', 'external', 'internal']] },
-    ],
+    'import/order': 'warn',
     'import/newline-after-import': 'error',
     'import/prefer-default-export': 'off',
     'import/no-restricted-paths': 'off',

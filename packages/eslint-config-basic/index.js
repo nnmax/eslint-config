@@ -29,7 +29,7 @@ const eslintConfig = {
     'block-scoped-var': ['error'],
     'default-case': ['error'],
     'no-unused-vars': [
-      'error',
+      'warn',
       {
         vars: 'all',
         args: 'after-used',
@@ -43,7 +43,7 @@ const eslintConfig = {
       {
         functions: false,
         classes: true,
-        variables: true,
+        variables: false,
         allowNamedExports: true,
       },
     ],

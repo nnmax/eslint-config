@@ -220,7 +220,7 @@ const eslintConfig = {
       },
     ],
     'react/jsx-space-before-closing': ['off', 'always'],
-    'react/no-array-index-key': 'error',
+    'react/no-array-index-key': 'off',
     'react/require-default-props': 'off',
     'react/forbid-foreign-prop-types': ['warn', { allowInPropTypes: true }],
     'react/void-dom-elements-no-children': 'error',
@@ -285,7 +285,12 @@ const eslintConfig = {
     'react/function-component-definition': 'off',
     'react/jsx-newline': 'off',
     'react/jsx-no-constructed-context-values': 'error',
-    'react/no-unstable-nested-components': 'error',
+    'react/no-unstable-nested-components': [
+      'error',
+      {
+        allowAsProps: true,
+      },
+    ],
     'react/no-namespace': 'error',
     'react/prefer-exact-props': 'error',
     'react/no-arrow-function-lifecycle': 'error',
