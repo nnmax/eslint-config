@@ -28,6 +28,7 @@ const eslintConfig = {
     '@typescript-eslint/ban-ts-comment': 'off',
     '@typescript-eslint/no-explicit-any': 'off',
     'no-use-before-define': 'off',
+    '@typescript-eslint/prefer-nullish-coalescing': 'off',
     '@typescript-eslint/no-use-before-define': [
       'error',
       {
