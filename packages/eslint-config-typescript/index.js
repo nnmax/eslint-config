@@ -29,6 +29,8 @@ const eslintConfig = {
     '@typescript-eslint/no-explicit-any': 'off',
     'no-use-before-define': 'off',
     '@typescript-eslint/prefer-nullish-coalescing': 'off',
+    '@typescript-eslint/no-base-to-string': 'off',
+    '@typescript-eslint/prefer-optional-chain': 'off',
     '@typescript-eslint/no-use-before-define': [
       'error',
       {
