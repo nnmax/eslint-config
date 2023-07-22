@@ -83,17 +83,7 @@ module.exports = {
     'import/no-webpack-loader-syntax': 'error',
     'import/no-unassigned-import': 'off',
     'import/no-named-default': 'error',
-    'import/no-anonymous-default-export': [
-      'off',
-      {
-        allowArray: false,
-        allowArrowFunction: false,
-        allowAnonymousClass: false,
-        allowAnonymousFunction: false,
-        allowLiteral: false,
-        allowObject: false,
-      },
-    ],
+    'import/no-anonymous-default-export': ['error'],
     'import/exports-last': 'off',
     'import/group-exports': 'off',
     'import/no-default-export': 'off',

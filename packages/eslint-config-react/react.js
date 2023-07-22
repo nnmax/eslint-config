@@ -31,7 +31,7 @@ const eslintConfig = {
         ],
       },
     ],
-    'react/display-name': ['off', { ignoreTranspilerName: false }],
+    'react/display-name': ['error', { checkContextObjects: true }],
     'react/forbid-prop-types': [
       'error',
       {
