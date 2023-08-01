@@ -1,5 +1,5 @@
 /** type https://github.com/unjs/changelogen/blob/main/src/config.ts */
-export default {
+const changelogConfig = {
   types: {
     feat: { title: '🚀 Enhancements', semver: 'minor' },
     perf: { title: '🔥 Performance', semver: 'patch' },
@@ -15,3 +15,5 @@ export default {
     ci: { title: '🤖 CI' },
   },
 }
+
+export default changelogConfig

@@ -10,11 +10,11 @@
     "@nnmax/eslint-config-basic": "workspace:*",
     "@nnmax/eslint-config-typescript": "workspace:*",
     "eslint-plugin-jsx-a11y": "^6.7.1",
-    "eslint-plugin-react": "^7.33.0",
-    "eslint-plugin-react-hooks": "^5.0.0-canary-587ae49d7-20230720"
+    "eslint-plugin-react": "^7.33.1",
+    "eslint-plugin-react-hooks": "5.0.0-canary-493f72b0a-20230727"
   },
   "devDependencies": {
-    "eslint": "^8.45.0"
+    "eslint": "^8.46.0"
   },
   "peerDependencies": {
     "eslint": "^8",
