@@ -153,7 +153,7 @@ __metadata:
     eslint: ^8.46.0
     eslint-plugin-jsx-a11y: ^6.7.1
     eslint-plugin-react: ^7.33.1
-    eslint-plugin-react-hooks: 5.0.0-canary-493f72b0a-20230727
+    eslint-plugin-react-hooks: next
   peerDependencies:
     eslint: ^8
     typescript: "*"
@@ -170,7 +170,6 @@ __metadata:
     eslint: ^8.46.0
     eslint-import-resolver-typescript: ^3.5.5
     eslint-plugin-import: ^2.28.0
-    eslint-plugin-jsx-a11y: ^6.7.1
     typescript: ^5.1.6
   peerDependencies:
     eslint: ^8
@@ -1419,12 +1418,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-react-hooks@npm:5.0.0-canary-493f72b0a-20230727":
-  version: 5.0.0-canary-493f72b0a-20230727
-  resolution: "eslint-plugin-react-hooks@npm:5.0.0-canary-493f72b0a-20230727"
+"eslint-plugin-react-hooks@npm:next":
+  version: 5.0.0-canary-997f52fbb-20230803
+  resolution: "eslint-plugin-react-hooks@npm:5.0.0-canary-997f52fbb-20230803"
   peerDependencies:
     eslint: ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0-0
-  checksum: 7a09509189170b52cdf25cb2d2ed37b96993e4277206456f6bdfa4015ff39f8d3a410a4fef00e242d32403ab5c40d8ed7f7591f7fb3fbd4b90fc45d3600e7553
+  checksum: 0a55cc895bf50637ca71d3d5469cd86e9bea53a82a19256e6b18436259a6a44acbe605dfb701d8cb7f9478f6bf3fde23054e6e53ace699850eb432ebc28df423
   languageName: node
   linkType: hard
 
