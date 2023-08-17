@@ -10,3 +10,5 @@ es/
 storybook-static/
 
 .git
+
+.pnp.*
