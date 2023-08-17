@@ -11,6 +11,7 @@ const eslintConfig = {
   },
   extends: [
     '@nnmax/eslint-config-basic',
+    'plugin:import/typescript',
     'plugin:@typescript-eslint/recommended-type-checked',
     'plugin:@typescript-eslint/stylistic-type-checked',
   ],
@@ -71,6 +72,9 @@ const eslintConfig = {
     ],
   },
   settings: {
+    'import/parsers': {
+      '@typescript-eslint/parser': ['.ts', '.tsx'],
+    },
     'import/resolver': {
       typescript: true,
       node: {

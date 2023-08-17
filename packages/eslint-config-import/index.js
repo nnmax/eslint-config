@@ -4,6 +4,7 @@ module.exports = {
     browser: true,
     node: true,
   },
+  extends: ['plugin:import/recommended'],
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module',
@@ -66,7 +67,21 @@ module.exports = {
     'import/no-duplicates': 'off',
     'import/no-namespace': 'off',
     'import/extensions': 'off',
-    'import/order': 'warn',
+    'import/order': [
+      'warn',
+      {
+        groups: [
+          'builtin',
+          'external',
+          'internal',
+          'parent',
+          'sibling',
+          'index',
+          'object',
+          'type',
+        ],
+      },
+    ],
     'import/newline-after-import': 'error',
     'import/prefer-default-export': 'off',
     'import/no-restricted-paths': 'off',
