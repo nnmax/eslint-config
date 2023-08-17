@@ -11,7 +11,7 @@
     "eslint-plugin-import": "^2.28.0"
   },
   "devDependencies": {
-    "eslint": "^8.46.0"
+    "eslint": "^8.47.0"
   },
   "peerDependencies": {
     "eslint": "^8"
