@@ -1,6 +1,6 @@
 {
   "name": "@nnmax/eslint-config-basic",
-  "version": "2.1.4-beta.0",
+  "version": "2.1.4-beta.1",
   "main": "index.js",
   "repository": {
     "type": "git",
