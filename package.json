@@ -31,8 +31,9 @@
     "publish": "yarn workspaces foreach --verbose --all --no-private npm publish --access public --tolerate-republish",
     "release": "yarn bump && yarn publish"
   },
-  "version": "2.1.3",
+  "version": "2.1.4-beta.0",
   "workspaces": [
-    "packages/*"
+    "packages/*",
+    "example/*"
   ]
 }
