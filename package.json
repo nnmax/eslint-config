@@ -15,7 +15,7 @@
     "*.{js,ts}": "eslint --fix"
   },
   "name": "@nnmax/eslint-config",
-  "packageManager": "yarn@3.6.1",
+  "packageManager": "yarn@3.6.3",
   "private": true,
   "repository": {
     "type": "git",
