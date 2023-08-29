@@ -68,7 +68,7 @@ const eslintConfig = {
         ignoreDOMComponents: true,
       },
     ],
-    'react/jsx-no-duplicate-props': ['error', { ignoreCase: true }],
+    'react/jsx-no-duplicate-props': ['error'],
     'react/jsx-no-literals': ['off', { noStrings: true }],
     'react/jsx-no-undef': 'error',
     'react/jsx-pascal-case': [
