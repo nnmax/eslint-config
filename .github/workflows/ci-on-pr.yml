@@ -30,9 +30,14 @@ jobs:
           cache-name: cache-node-modules
         with:
           path: |
-            .yarn/cache
             node_modules
+            .yarn/unplugged
+            .yarn/install-state.gz
           key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-build-${{ env.cache-name }}-
+            ${{ runner.os }}-build-
+            ${{ runner.os }}-
       - name: Install dependencies
         run: yarn install --immutable
 
@@ -58,8 +63,9 @@ jobs:
           cache-name: cache-node-modules
         with:
           path: |
-            .yarn/cache
             node_modules
+            .yarn/unplugged
+            .yarn/install-state.gz
           key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/yarn.lock') }}
           restore-keys: |
             ${{ runner.os }}-build-${{ env.cache-name }}-
