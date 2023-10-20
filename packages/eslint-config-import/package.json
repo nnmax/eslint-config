@@ -7,11 +7,11 @@
     "url": "https://github.com/nnmax/eslint-config.git"
   },
   "dependencies": {
-    "eslint-import-resolver-typescript": "^3.6.0",
+    "eslint-import-resolver-typescript": "^3.6.1",
     "eslint-plugin-import": "^2.28.1"
   },
   "devDependencies": {
-    "eslint": "^8.48.0"
+    "eslint": "^8.51.0"
   },
   "peerDependencies": {
     "eslint": "^8"
