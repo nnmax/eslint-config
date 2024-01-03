@@ -54,6 +54,7 @@ module.exports = {
           '**/karma.conf.{js,ts}',
           '**/.eslintrc.{js,ts,cjs,mjs}',
           '**/*.stories.*',
+          '**/gatsby-config.{js,ts,cjs,mjs}',
         ],
         optionalDependencies: false,
       },
