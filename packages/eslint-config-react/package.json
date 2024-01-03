@@ -9,12 +9,12 @@
   "dependencies": {
     "@nnmax/eslint-config-basic": "workspace:*",
     "@nnmax/eslint-config-typescript": "workspace:*",
-    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-jsx-a11y": "^6.8.0",
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "next"
   },
   "devDependencies": {
-    "eslint": "^8.51.0"
+    "eslint": "^8.56.0"
   },
   "peerDependencies": {
     "eslint": "^8",
