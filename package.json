@@ -2,13 +2,13 @@
   "devDependencies": {
     "@nnmax/eslint-config-basic": "workspace:*",
     "@types/prettier": "^3.0.0",
-    "bumpp": "^9.2.1",
-    "eslint": "^8.56.0",
+    "bumpp": "^9.4.0",
+    "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-import": "^2.29.1",
-    "husky": "^8.0.3",
-    "lint-staged": "^15.2.0",
-    "prettier": "^3.1.1"
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
+    "prettier": "^3.2.5"
   },
   "lint-staged": {
     "*.{js,md,yml,yaml,json}": "prettier --write",
@@ -25,7 +25,7 @@
     "bump": "bumpp -r",
     "eslint": "eslint .",
     "eslint:fix": "yarn eslint --fix",
-    "postinstall": "husky install",
+    "postinstall": "husky",
     "prettier": "prettier --write .",
     "prettier:ci": "prettier --check .",
     "publish": "yarn workspaces foreach --verbose --all --no-private npm publish --access public --tolerate-republish",
@@ -33,7 +33,6 @@
   },
   "version": "3.1.0",
   "workspaces": [
-    "packages/*",
-    "example/*"
+    "packages/*"
   ]
 }
