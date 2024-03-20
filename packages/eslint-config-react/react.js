@@ -241,7 +241,7 @@ const eslintConfig = {
     'react/no-typos': 'error',
     'react/jsx-curly-brace-presence': [
       'error',
-      { props: 'never', children: 'never' },
+      { props: 'always', children: 'always', propElementValues: 'always' },
     ],
     'react/jsx-one-expression-per-line': ['error', { allow: 'single-child' }],
     'react/destructuring-assignment': ['error', 'always'],
